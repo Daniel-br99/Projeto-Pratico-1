@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+   background-color: black;
+   list-style: none;
+   text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.barra-vermelha{
+    width: 100%;
+    height: 5px;
+    background-color: red;
+}
+
+nav{
+    width: 60%;
+}
+
+ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li{
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #d21617;
+}
+
+#logo {
+    width: 140px;
+    height: auto;
+}
+
+#banner {
+    background-image: url('https://pbs.twimg.com/media/FBwJWeQXIAItfyH.jpg:large');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+#trailer-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width:60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trailer{
+   width: 50%;
+}
+
+#sinopse {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.description {
+    color: #fff;
+    font-size: 19px;
+    font-family:'kdam Thmor Pro', sans-serif;
+    width: 70%;
+}
+
+.button {
+    width: 200px;
+    height: 60px;
+    background-color: #d21617;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.actor-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'kdam Thmor Pro', sans-serif;
+    margin-bottom: 15px;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.banner-1:hover {
+    background-image: url('https://media.vogue.mx/photos/5c06fe93f5bb24fb60fe70ce/master/pass/donde_esta_robert_pattinson_2018_que_hace_peliculas_6623.jpg');
+}
+
+.banner-2:hover {
+    background-image: url('https://s2.glbimg.com/4x1K-GuXEI9bK85WTv1ZE_lK-uw=/600x900/smart/e.glbimg.com/og/ed/f/original/2022/03/27/gettyimages-1388062540_xFgUXBB.jpg');
+}
+
+.banner-3:hover {
+    background-image: url('https://static.wikia.nocookie.net/batman/images/b/b7/Gordon-0.jpg/revision/latest?cb=20210518231553');
+}
+.banner-1{
+    background-image:url('https://preview.redd.it/zktgeb70i2h91.jpg?width=640&crop=smart&auto=webp&s=246b1e4e26cb687c901a7b731edeeee2ad2f4dd8');
+}
+
+.banner-2 {
+    background-image: url('https://pbs.twimg.com/media/FMO83fmWYAMYttY?format=jpg&name=900x900');
+}
+
+.banner-3 {
+    background-image: url('https://static.wikia.nocookie.net/batman/images/3/36/Jim_Gordon_Total_Film_still.webp/revision/latest?cb=20220220041206');
+}
+
+footer {
+    Height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family: 'kdam Thmor Pro', sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px) {
+   
+    .footer-navigation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #banner {
+        background-position: 40%;
+    }
+
+    #trailer-container {
+        margin-top: 70px;
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trailer {
+        width: 100%;
+    }
+
+    #sinopse {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    .button{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-top: 120px;
+    }
+
+    .card {
+        width: 97%;
+    }
+   
+
+}
+
+#banner-fotos {
+    background-image: url('https://sobresagas.com.br/wp-content/uploads/2022/02/the-batman-charada.jpg');
+    background-position: 50% 30%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+.fotos-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.fotos-cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card-f {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'kdam Thmor Pro', sans-serif;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.card-f:hover {
+    transform: scale(1.02);
+}
+
+.foto-1 {
+    background-image: url('https://poltronanerd.com.br/wp-content/uploads/2023/01/the-batman-robert-pattinson-1.jpg');
+}
+
+.foto-2 {
+    background-image: url('https://img.olhardigital.com.br/wp-content/uploads/2022/02/Charada-em-The-Batman.jpg');
+}
+
+.foto-3 {
+    background-image: url('https://static.wikia.nocookie.net/the-batman-universe/images/7/7e/Penguin_promo_-_The_Batman.jpg/revision/latest?cb=20220209175727');
+}
+
+.foto-4 {
+    background-image: url('https://static.wikia.nocookie.net/the-batman-universe/images/8/89/Carmine_Falcone_HD.png/revision/latest?cb=20220305020228');
+}
+
+.foto-5 {
+    background-image: url('https://poltronanerd.com.br/wp-content/uploads/2022/03/poltrona-zoe-mulher-gato.jpg');
+}
+
+.foto-6 {
+    background-image: url('https://images.squarespace-cdn.com/content/v1/51b3dc8ee4b051b96ceb10de/07c53b1e-7aee-477d-8d45-c16c080faa75/new-featurette-for-the-batman-offers-additional-details-on-jeffrey-wrights-jim-gordon.jpg');
+}
+
+.foto-7 {
+    background-image: url('https://static.wikia.nocookie.net/the-batman-universe/images/2/24/Alfred_Pennyworth.png/revision/latest?cb=20220216125116');
+}
+
+.foto-8 {
+    background-image: url('https://static.wikia.nocookie.net/batman/images/a/a5/Bella_Real_-_Trailer_Image.png/revision/latest?cb=20220309015706');
+}
+
+.fotos-cards-action-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.fotos-cards-action-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card-action {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'kdam Thmor Pro', sans-serif;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.card-action:hover {
+    transform: scale(1.02);
+}
+
+.foto-action-1 {
+    background-image: url('https://bloody-disgusting.com/wp-content/uploads/2022/02/rev-1-TBM-11721r_High_Res_JPEG-1.jpeg');
+    background-position: 70% 50%;
+}
+
+.foto-action-2 {
+    background-image: url('https://www.bakiniz.com/wp-content/uploads/2022/03/batman3.jpg');
+}
+
+.foto-action-3 {
+    background-image: url('https://static.wikia.nocookie.net/batman/images/3/36/Jim_Gordon_Total_Film_still.webp/revision/latest?cb=20220220041206');
+    background-position: 70% 50%;
+}
+
+.big-image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.big-image-content {
+    width: 80%;
+    height: 600px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    background-size: cover;
+    background-position: 41% 25%;
+    background-image: url('https://nofilmschool.com/sites/default/files/styles/facebook/public/the-batman-2022-official-images-08_copy.jpg?itok=hdl2dubR');
+}
+
+.big-image-content:hover {
+    transform: scale(1.02);
+}
+
+@media(max-width: 768px) {
+    #banner-fotos {
+        background-position: 100%;
+    }
+
+    .fotos-cards-content {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+        column-gap: 40px;
+        margin-top: 20px;
+    }
+
+    .fotos-cards-container {
+        margin-top: 20px;
+
+    }
+
+    .card-f {
+        width: 97%;
+        background-position: 50% 25%;
+    }
+
+    .fotos-cards-action-content {
+        display: grid;
+        grid-template-columns: 1fr;  
+        width: 90%;  
+    }
+    
+    .card-action {
+        
+        width: 97%;
+    }
+
+    .foto-action-1 {
+        background-position: 75% 50%;
+    }
+
+    .foto-action-2 {
+        background-position: 50% 50%;
+    }
+
+    .foto-action-3 {
+        background-position: 65% 50%;
+    }
+
+    .big-image-content{
+        width: 90%;
+    }
+
+    .comment {
+        width: 80%;        
+    }
+    
+    .comment-title {        
+        margin-left: 10%;
+    }
+    
+   
+}
+
+.texto-container {
+        width: 100%;
+        margin-top: 15px;
+}
+
+.titulo {
+    color: #fff;
+    font-size: 10px;
+    font-family:'kdam Thmor Pro', sans-serif;
+    width: 70%;
+    margin-left: 17%; 
+    margin-bottom: 2%;   
+}
+
+.texto {
+    color: #fff;
+    font-size: 19px;
+    font-family:'kdam Thmor Pro', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.comments-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+}
+
+.comments-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);   
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.comment-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;    
+}
+
+.comment-pack {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.title-pack {
+    display: flex;
+    flex-direction: row;
+}
+
+.comment {    
+    color: #fff;
+    font-size: 19px;
+    font-family:'kdam Thmor Pro', sans-serif;
+    margin-bottom: 15px;
+}
+
+.comment-title {
+    color: #efb20b;
+    font-size: 21px;
+    font-family:'kdam Thmor Pro', sans-serif;   
+}
+
+@media(min-width: 769px) {
+    .comment {    
+        width: 50%;
+    }
+
+    .comment-title {        
+        margin-left: 25%;
+    }
+}
